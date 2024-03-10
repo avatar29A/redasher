@@ -107,6 +107,7 @@ let [<Literal>] queryResultResponse = """
 
 let mockConnectionInfo = {ConnectionUrl = "fake"; ApiKey = "fake" }
 
+[<Tests>]
 let datasourceLoadTests = testList "Load DataSources" [
    test "LoadDataSourcesOK" {
       let mockRequester _ _ =
@@ -137,6 +138,7 @@ let datasourceLoadTests = testList "Load DataSources" [
    }
 ]
 
+[<Tests>]
 let jobLoadTests = testList "Load Job by ID" [
   test "Load JOB is OK" {
     let mockRequester _ _ =
@@ -157,6 +159,7 @@ let jobLoadTests = testList "Load Job by ID" [
   }
 ]
 
+[<Tests>]
 let queryResultLoadTests = testList "Load QueryResult by ID" [
   test "Load QueryResult is OK" {
     let mockRequester _ _ =
