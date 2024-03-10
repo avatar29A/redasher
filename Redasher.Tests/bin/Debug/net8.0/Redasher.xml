@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Redasher</name></assembly>
+<members>
+<member name="M:Redash.get(Redash.ConnectionInfo,System.String)">
+<summary>
+ Predefined HTTP Requesters
+</summary>
+</member>
+<member name="M:Redash.bs2str(System.Byte[])">
+<summary>
+ Utils
+
+</summary>
+</member>
+</members>
+</doc>

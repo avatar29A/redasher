@@ -1,0 +1,52 @@
+### Send POST request with json body
+POST {{baseUrl}}/query_results
+Content-Type: application/json
+Authorization: Key {{apiKey}}
+
+{
+  "data_source_id": {{dataSource}},
+  "query": "SELECT * FROM user_global LIMIT 3"
+}
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200, get " + response.status);
+        client.assert(response.body.hasOwnProperty("job"), "no job")
+        client.assert(response.body.job.status === 1)
+        client.assert(response.body.job.error === "", "Got error: " + response.body.job.error)
+        client.log("job.id is " + response.body.job.id)
+    });
+    client.global.set("job_id", response.body.job.id);
+ %}
+
+###
+
+### Retrieve Job Info
+
+GET {{baseUrl}}/jobs/{{job_id}}
+Content-Type: application/json
+Authorization: Key {{apiKey}}
+
+> {%
+    client.global.set("query_result_id", response.body.job.query_result_id);
+ %}
+
+###
+
+### Retrieve Query Results
+
+GET {{baseUrl}}/query_results/{{query_result_id}}
+Content-Type: application/json
+Authorization: Key {{apiKey}}
+
+###
+
+### Create a new query 
+
+### Retrieves data sources
+
+GET {{baseUrl}}/data_sources
+Content-Type: application/json
+Authorization: Key {{apiKey}}
+
+###

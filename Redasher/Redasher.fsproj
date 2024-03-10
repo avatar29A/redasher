@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Redash.fs" />
+        <None Include="Scripts\SerialisationPlay.fsx" />
+        <None Include="Scripts\RedashClient.fsx" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="http-client.private.env.json" />
+      <Content Include="RedashHttpClient.http" />
+      <Content Include=".gitignore" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Expecto" Version="10.1.0" />
+      <PackageReference Include="FSharp.SystemTextJson" Version="1.2.42" />
+      <PackageReference Include="FsHttp" Version="14.5.0" />
+      <PackageReference Include="FsToolkit.ErrorHandling" Version="4.15.1" />
+    </ItemGroup>
+
+</Project>
