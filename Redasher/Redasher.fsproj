@@ -12,7 +12,13 @@
         <RepositoryType>public</RepositoryType>
         <PackageTags>redash</PackageTags>
         <PackageReleaseNotes>First public version</PackageReleaseNotes>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
 
     <ItemGroup>
         <Compile Include="Redash.fs" />
@@ -23,7 +29,6 @@
     <ItemGroup>
       <Content Include="http-client.private.env.json" />
       <Content Include="RedashHttpClient.http" />
-      <Content Include=".gitignore" />
     </ItemGroup>
 
     <ItemGroup>
