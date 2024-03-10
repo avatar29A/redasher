@@ -1,5 +1,9 @@
 # Redasher
 
+[![Build Status](https://img.shields.io/github/actions/workflow/status/avatar29A/redasher/dotnet.yml?style=flat-square)](https://github.com/avatar29A/redasher/actions/workflows/dotnet.yml)
+[![Issues](https://img.shields.io/github/issues/avatar29A/redasher.svg?style=flat-square)](https://github.com/avatar29A/redasher/issues)
+[![NuGet](https://img.shields.io/nuget/v/redasher.svg?style=flat-square)](https://www.nuget.org/packages/redasher)
+
 F# library for Redash API
 
 ## Install
