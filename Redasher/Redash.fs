@@ -188,7 +188,6 @@ let getQueryResults'<'Model>  (requester:PostRequester)
     """
     requester connection endpoint payload
     |> bs2str
-    |> printResponse
     |> toJson<QueryResults<'Model>>
     
 let rec getQueryResults<'Model> (connection:ConnectionInfo)
