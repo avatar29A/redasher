@@ -15,6 +15,7 @@
       <Content Include="http-client.private.env.json" />
       <Content Include="RedashHttpClient.http" />
       <Content Include=".gitignore" />
+      <Content Include="README.md" />
     </ItemGroup>
 
     <ItemGroup>
