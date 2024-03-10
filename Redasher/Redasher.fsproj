@@ -3,6 +3,15 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Version>0.1.0</Version>
+        <Title>Redasher</Title>
+        <Description>F# library for Redash API</Description>
+        <Copyright>Boris Glebov</Copyright>
+        <PackageProjectUrl>https://github.com/avatar29A/redasher</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/avatar29A/redasher</RepositoryUrl>
+        <RepositoryType>public</RepositoryType>
+        <PackageTags>redash</PackageTags>
+        <PackageReleaseNotes>First public version</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
